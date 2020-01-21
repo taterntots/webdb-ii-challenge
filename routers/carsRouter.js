@@ -1,10 +1,11 @@
-const express = require("express");
+const express = require('express');
+const db = require('../data/dbConfig');
 const router = express.Router();
-const knex = require("knex");
+
 
 //gets a list of cars
 router.get('/', (req, res) => {
-  // ProjectDb.get()
+  // db.get()
   //   .then(cars => {
   //     res.status(200).json(cars);
   //   })
